@@ -1,0 +1,64 @@
+.TH RIG 6 "4 JUN 2002"
+.SH NAME
+RIG \- Random Identity Generator
+.SH USAGE
+.B rig
+[
+.B -f
+|
+.B -m
+] [
+.B -d datadir
+] [
+.B -c num
+]
+.SH DESCRIPTION
+Rig is a utility that will piece together a random first name,
+last name, street number and address, along with a geographically
+consistant (ie, they all match the same area) city, state, ZIP code,
+and area code.
+.PP
+It is suitable for such applications as feeding the NY times registration
+page to fend off junk (snail) mail and telemarketers, or for registering on
+BBS's to which you don't wish to reveal your real information.
+.SH OPTIONS
+.IP \fB\-f\fR,\ \fB\-m\fR
+Respectively, use female and male names. If neither or both options are
+selected, RIG uses both female and male names.
+.IP \fB\-d\ datadir\fR
+Use data files found in \fBdatadir\fR. Without this option, the
+default directory of DATADIR is assumed.
+.IP \fB\-c\ num\fR
+Output \fBnum\fR identities. Default is 1.
+.SH FILES
+.nf
+DATADIR/locdata.idx
+DATADIR/street.idx
+DATADIR/fnames.idx
+DATADIR/mnames.idx
+DATADIR/lnames.idx
+.SH HISTORY
+Based on "fake" written for MS-DOS. Unfortunately the author and publish
+date are unknown.
+
+First UNIX version written from scratch in 1999.
+
+This manpage based on RIG version 1.10.
+.PP
+.SH AUTHORS
+UNIX version (c) 1999-2002 Ian Turner with contributions from Ian Prowell,
+Nick Rusnov, and Schneelocke.
+Geography Database is from the original version and I believe it to be
+held in the public domain.
+Names database is from the US Census at 
+.nh
+.Bd -literal
+.BR http://www.census.gov/genealogy/names/
+.Ed
+.hy
+, courtesy of Trent Stanley.
+.PP
+Send all comments and bug-reports to:
+.PP
+vectro@RIG.sourceforge.net
+

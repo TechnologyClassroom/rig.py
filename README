@@ -1,0 +1,11 @@
+This is RIG, a program that generates fake identities. Install should be
+fairly straightforward, just type "make install". If your system dosen't 
+have /dev/urandom and you'd like to use /dev/random instead, do
+$ make install CFLAGS=-DDEVRANDOM
+
+RIG comes with the top 1000 names from the US census at 
+http://www.census.gov/genealogy/names/, but Trent Stanley maintains a 
+more extensive list at http://members.cox.net/gps/rignames_all.zip
+
+If you have any patches, fixes, etc., just send 'em on over to
+vectro@RIG.sourceforge.net.

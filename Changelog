@@ -1,0 +1,58 @@
+1.11:
+4/23/2006 Ian Turner <vectro@RIG.sourceforge.net>
+- Fix compilation on some platforms. Thanks to many people for noticing 
+  these problems.
+- Fix problems with the -m and -f options. Thanks to Casey Carter 
+  <rockear@hive-mind.net> noticing this problem, and to the Debian 
+  developers (notably Norbert Veber <nveber@pyre.virge.net> and Aaron 
+  Lehmann <aaronl@vitelus.com>) for proposing a fix.
+- Add an entry for Coward, SC.
+- Make Biloxi area and ZIP codes match the same physical spot. Thanks to 
+  Chris Lawrence for noticing this.
+
+1.10:
+1/8/2002 Ian Turner <vectro@RIG.sourceforge.net>
+- Reworked the option syntax, and added the ability to generate multiple 
+  identities.
+1/8/2002 Schneelocke <Schneelocke@gmx.net>
+- Fixed a bug where RIG would output the same values if run many times in 
+  succession.
+4/10/2002 Ian Turner <vectro@RIG.sourceforge.net>
+- Changed the default prefix to /usr/local. Thanks to xavier renaut 
+  <xavier@hansonpublications.com>.
+6/4/2002 Ian Turner <vectro@RIG.sourceforge.net>
+- Replaced the names list with popular names from the US Census 
+  (http://www.census.gov/genealogy/names/). Thanks to Trent R. Stanley 
+  <nano@cox.net>
+- Replaced the option-parsing with something more complicated
+- Added -m and -f options to choose female and male identities.
+
+1.05:
+1/3/2002 Ian Turner <vectro@RIG.sourceforge.net>
+- Added new sources of entropy, including /dev/random and rand(). Thanks
+  to Schneelocke <Schneelocke@gmx.net>
+12/27/2001 Ian Turner <vectro@RIG.sourceforge.net>
+- Fixed a bug where leading zeros in ZIP codes were dropped. Thanks to
+  Jeff Clagg <lenin@nickelwound.com>.
+
+1.04:
+8/29/2001 Ian Turner <vectro@RIG.sourceforge.net>
+- Cleaned up the makefile and manpage. Thanks to Nick Rusnov 
+  <nick@grawk.net>.
+- Changed VI to VA in database. Thanks to Ian Prowell 
+  <iprowell@prowell.org>.
+- Fixed off-by-one error that would sometimes give corrupted output. 
+  Thanks to Ian Prowell <iprowell@prowell.org>.
+
+1.02:
+1/27/2000 Ian Turner <vectro@RIG.sourceforge.net>
+- Fixed the problem where under most compilers, RIG would only provide a
+  list of male names. Found by velAr the ph33rkat <velar@mpeg3c.dhs.org>.
+
+1.01:
+1/27/2000 Doug Geiger <runexe@counter.clue4all.net>
+- Fixed incorrect default directory.
+
+1.00:
+1/27/2000 Ian Turner <vectro@RIG.sourceforge.net>
+- Initial release
