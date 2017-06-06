@@ -1,6 +1,6 @@
 /* This is the source code for RIG, a program to generate fake identities.
  * Copyright (c) 1999 Ian Turner
- * 
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
  * as published by the Free Software Foundation; either version 2
@@ -10,7 +10,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
@@ -47,7 +47,7 @@ T getrandnum(T max)
       randev.read(&rval, sizeof(rval));
     } else
 #endif
-    {      
+    {
       /* neither /dev/random nor /dev/urandom work; fallback to rand(). */
       static bool seeded = false;
       if (!seeded) {
@@ -229,7 +229,7 @@ void set_number(char option, const char* num) {
   assert(option == 'c');
   char * tail;
   numids = strtol(num, &tail, 0);
-  
+
   if (errno || tail == num) {
     printusage();
   }
@@ -263,7 +263,7 @@ int main(int argc, char *argv[])
   locdataidx = DATADIR;
 
   // four options
-  option_data::parse_options(argc, argv, 4, option_list);  
+  option_data::parse_options(argc, argv, 4, option_list);
 
   if (!female && !male)
     female = male = true;
@@ -273,7 +273,7 @@ int main(int argc, char *argv[])
   fnamesidx = locdataidx + "/fnames.idx";
   lnamesidx = locdataidx + "/lnames.idx";
   locdataidx += "/locdata.idx";
-    
+
   vector<string> firstname, lastname;
   vector<wholeline> street;
   vector<place> location;
@@ -291,7 +291,7 @@ int main(int argc, char *argv[])
   }
   if (readfile(lastname, lnamesidx.c_str()) == 0)
     printfileerror(lnamesidx);
-  
+
   for (int i = 1; i <= numids; i ++) {
     cout << getrandpart(firstname) << " " << getrandpart(lastname) << endl
 	 << getrandnum(1024u) + 1 << " " << getrandpart(street) << endl
@@ -300,8 +300,3 @@ int main(int argc, char *argv[])
       cout << endl;
   }
 }
-
-
-
-
-
