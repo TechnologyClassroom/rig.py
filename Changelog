@@ -1,3 +1,8 @@
+1.12:
+6/6/2017 EinBaum <mail@einbaum.org>
+- Fix a compilation issue: Missing headers
+- Fix installation: Create missing data directories if they don't exist
+
 1.11:
 4/23/2006 Ian Turner <vectro@RIG.sourceforge.net>
 - Fix compilation on some platforms. Thanks to many people for noticing 

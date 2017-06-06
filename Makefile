@@ -11,6 +11,8 @@ rig.6: rig.6.in
 	sed s@DATADIR@"$(DATADIR)"@g < rig.6.in > rig.6
 
 install: rig rig.6
+	mkdir -p $(BINDIR)
+	mkdir -p $(MANDIR)/man6
 	install -g 0 -m 755 -o 0 -s rig $(BINDIR)
 	install -g 0 -m 644 -o 0 rig.6 $(MANDIR)/man6/rig.6
 	install -g 0 -m 755 -o 0 -d $(DATADIR)
