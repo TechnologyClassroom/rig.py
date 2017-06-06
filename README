@@ -1,3 +1,10 @@
+EinBaum: The original RIG program was downloaded here:
+
+http://rig.sourceforge.net/
+
+
+Original README:
+
 This is RIG, a program that generates fake identities. Install should be
 fairly straightforward, just type "make install". If your system dosen't 
 have /dev/urandom and you'd like to use /dev/random instead, do
