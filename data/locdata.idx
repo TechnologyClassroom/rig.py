@@ -1,61 +1,316 @@
-Addison IL 708 60101
-Akron OH 216 44309
-Albany GA 912 31706
-Albany NY 518 12212
-Alton IL 708 62002
-Ames IA 515 50010
-Anderson IN 317 46018
-Appleton WI 414 54911
-Arlington TX 817 76010
-Athens GA 404 30601
-Auburn NY 315 13021
-Aurora IL 708 60507
-Austin TX 512 78710
-Beloit WI 608 53511
-Berkeley CA 510 94704
-Biloxi MS 228 39530
-Binghamton NY 607 13902
-Burlington NC 919 27215
-Chicago IL 312 60607
-Clearwater FL 813 33575
-Coward SC 843 29530
-Dallas TX 214 75260
-Dayton OH 513 45401
-Denver CO 303 80202
-Detroit MI 313 48233
-Emporia KS 316 66801
-Erie PA 814 16515
-Galveston TX 409 77553
-Garland TX 903 75040
-Gary IN 219 46401
-Hamilton OH 513 45012
-Hampton VA 804 23670
-Indianapolis IN 317 46206
-Irving TX 903 75061
-Kinston NC 919 28501
-Knoxville TN 865 37901
-Massillon OH 216 44646
-Memphis TN 901 38101
-Mentor OH 216 44060
-Miami FL 305 33152
-Milwaukee WI 414 53201
-Minneapolis MN 612 55401
-Omaha NE 402 68108
-Orange NJ 201 07051
-Orlando FL 407 32802
-Passadena CA 818 91109
-Passaic NJ 201 07055
-Phoenix AZ 602 85026
-Plainfield NJ 908 07061
-Providence RI 401 02940
-Raleigh NC 919 27611
-Richmond VA 804 23232
-Roanoke VA 703 24022
-Rome GA 404 30161
-Seattle WA 206 98109
-Spokane WA 509 99210
-Sunnyvale CA 408 94086
-Utica NY 315 13504
-Vancouver WA 206 98661
-Wichita KS 316 67276
-Yonkers NY 914 10701
+Aberdeen, SD 605 57401
+Abilene, TX 325 79605
+Akron, OH 330 44312
+Albany, GA 229 31705
+Albany, NY 518 12203
+Albuquerque, NM 505 87121
+Allentown, PA 610 18102
+Anaheim, CA 714 92804
+Anchorage, AK 907 99504
+Ann Arbor, MI 734 48103
+Arlington, MN 952 55307
+Arlington, VA 703 22204
+Asheville, NC 828 28806
+Ashland, KY 606 41102
+Atlanta, GA 404 30349
+Augusta, GA 706 30906
+Aurora, IL 630 60505
+Austin, TX 512 78745
+Bakersfield, CA 661 93307
+Baltimore, MD 410 21215
+Baton Rouge, LA 225 70816
+Beaumont, TX 409 77705
+Beckley, WV 304 25801
+Belgrade, MT 406 59714
+Belleville, IL 618 62226
+Bellevue, WA 425 98006
+Billings, MT 406 59102
+Binghamton, NY 607 13905
+Birmingham, AL 205 35242
+Bismarck, ND 701 58501
+Boise, ID 208 83709
+Boston, MA 617 02128
+Bowling Green, KY 270 42101
+Bozeman, MT 406 59715
+Brentwood, NY 631 11717
+Bridgeport, CT 203 06606
+Bristol, VA 276 24201
+Brookings, SD 605 57006
+Brook Park, MN 763 55007
+Buffalo, NY 716 14221
+Burlington, VT 802 05401
+Butte, MT 406 59701
+Caldwell, ID 208 83605
+Cambridge, MA 617 02139
+Camden, NJ 856 08105
+Cape Coral, FL 239 33914
+Casper, WY 307 82601
+Cedar Rapids, IA 319 52402
+Charleston, SC 843 29412
+Charleston, WV 304 25302
+Charlotte, NC 704 28269
+Chattanooga, TN 423 37421
+Cheyenne, WY 307 82001
+Chicago, IL 773 60629
+Cicero, IL 708 60804
+Cincinnati, OH 513 45238
+Clarksville, TN 931 37042
+Cleveland, OH 216 44130
+Coeur D Alene, ID 208 83815
+College Station, TX 979 77840
+Colorado Springs, CO 719 80918
+Columbia, MO 573 65203
+Columbia, SC 803 29223
+Columbus, OH 614 43230
+Concord, CA 925 94521
+Concord, NH 603 03301
+Conroe, TX 936 77301
+Corpus Christi, TX 361 78415
+Dallas, TX 214 75217
+Davenport, IA 563 52806
+Dayton, OH 937 45424
+Denton, TX 940 76210
+Denver, CO 303 80219
+Derry, NH 603 03038
+Des Moines, IA 515 50317
+Detroit, MI 313 48228
+Dickinson, ND 701 58601
+Dover, DE 302 19901
+Dover, NH 603 03820
+Duluth, MN 218 55811
+Eau Claire, WI 715 54703
+Elgin, IL 847 60120
+Elizabeth, NJ 908 07202
+El Paso, TX 915 79936
+Erie, PA 814 16509
+Essex Junction, VT 802 05452
+Eugene, OR 541 97402
+Evanston, WY 307 82930
+Evansville, IN 812 47714
+Fairbanks, AK 907 99709
+Fairmont, WV 304 26554
+Fargo, ND 701 58103
+Fayetteville, NC 910 28314
+Flint, MI 810 48504
+Fort Collins, CO 970 80525
+Fort Lauderdale, FL 954 33311
+Fort Smith, AR 479 72903
+Fort Wayne, IN 260 46835
+Fort Worth, TX 817 76137
+Fresno, CA 559 93722
+Gainesville, FL 352 32608
+Germantown, MD 301 20874
+Gillette, WY 307 82718
+Grand Forks, ND 701 58201
+Grand Island, NE 308 68801
+Grand Rapids, MI 616 49504
+Great Falls, MT 406 59405
+Green Bay, WI 920 54313
+Green River, WY 307 82935
+Greensboro, NC 336 27406
+Greenville, NC 252 27858
+Greenville, SC 864 29615
+Gulfport, MS 228 39503
+Hammond, IN 219 46324
+Hartford, CT 860 06106
+Havre, MT 406 59501
+Helena, MT 406 59601
+Hempstead, NY 516 11550
+Hilo, HI 808 96720
+Honolulu, HI 808 96817
+Houma, LA 985 70364
+Houston, TX 281 77084
+Huntington, WV 304 25701
+Huntsville, AL 256 35810
+Huron, SD 605 57350
+Hutchinson, KS 620 67501
+Idaho Falls, ID 208 83401
+Indianapolis, IN 317 46227
+Irvine, CA 949 92620
+Jackson, MS 601 39212
+Jackson, TN 731 38305
+Jacksonville, FL 904 32210
+Jackson, WY 307 83001
+Jamestown, ND 701 58401
+Jersey City, NJ 201 07305
+Jonesboro, AR 870 72401
+Juneau, AK 907 99801
+Kahului, HI 808 96732
+Kailua, HI 808 96734
+Kalamazoo, MI 269 49009
+Kalispell, MT 406 59901
+Kansas City, MO 816 64118
+Keene, NH 603 03431
+Kenosha, WI 262 53142
+Kihei, HI 808 96753
+Killeen, TX 254 76549
+Knoxville, TN 865 37918
+Lafayette, LA 337 70506
+Lakeland, FL 863 33810
+Lake Saint Louis, MO 314 63367
+Lancaster, PA 717 17603
+Lansing, MI 517 48911
+Laramie, WY 307 82070
+Laredo, TX 956 78046
+Las Cruces, NM 575 88001
+Las Vegas, NV 702 89110
+Lawton, OK 580 73505
+Lewes, DE 302 19958
+Lewiston, ID 208 83501
+Lexington, KY 859 40517
+Little Rock, AR 501 72204
+Long Beach, CA 562 90805
+Los Angeles, CA 323 90011
+Louisville, KY 502 40214
+Lowell, MA 978 01852
+Lubbock, TX 806 79424
+Lynchburg, VA 434 24502
+Macon, GA 478 31204
+Madison, WI 608 53711
+Manchester, NH 603 03103
+Mandan, ND 701 58554
+Marquette, MI 906 49855
+Martinsburg, WV 304 25404
+Mason City, IA 641 50401
+Memphis, TN 901 38109
+Meridian, ID 208 83646
+Merrimack, NH 603 03054
+Mesa, AZ 480 85204
+Miami, FL 305 33186
+Middletown, DE 302 19709
+Midland, TX 432 79705
+Miles City, MT 406 59301
+Milford, DE 302 19963
+Millsboro, DE 302 19966
+Milton, DE 302 19968
+Milwaukee, WI 414 53215
+Minneapolis, MN 612 55407
+Minot, ND 701 58701
+Missoula, MT 406 59801
+Mitchell, SD 605 57301
+Mobile, AL 251 36695
+Montgomery, AL 334 36117
+Morgantown, WV 304 26505
+Muncie, IN 765 47304
+Muskegon, MI 231 49442
+Nampa, ID 208 83686
+Nashua, NH 603 03060
+Nashville, TN 615 37211
+Newark, DE 302 19702
+Newark, NJ 973 07104
+Newark, OH 740 43055
+New Braunfels, TX 830 78130
+New Castle, PA 724 16101
+New City, NY 845 10956
+New Orleans, LA 504 70119
+New York, NY 212 10025
+North Port, FL 941 34287
+Oakland, CA 510 94601
+Oceanside, CA 442 92057
+Oceanside, CA 760 92057
+O'Fallon, MO 636 63366
+Oklahoma City, OK 405 73160
+Omaha, NE 402 68104
+Orlando, FL 321 32828
+Overland Park, KS 913 66212
+Oxnard, CA 805 93033
+Palm Coast, FL 386 32164
+Parkersburg, WV 304 26101
+Parma,OH,440,44130
+Pasadena, CA 626 91104
+Pearl City, HI 808 96782
+Peoria, IL 309 61604
+Philadelphia, PA 215 19120
+Phoenix, AZ 602 85032
+Pierre, SD 605 57501
+Pittsburgh, PA 412 15237
+Pocatello, ID 208 83201
+Portland, ME 207 04103
+Portland, OR 503 97229
+Port Saint Lucie, FL 772 34953
+Portsmouth, NH 603 03801
+Post Falls, ID 208 83854
+Princeton, WV 304 24740
+Providence, RI 401 02909
+Raleigh, NC 919 27610
+Rapid City, SD 605 57701
+Redding, CA 530 96003
+Reno, NV 775 89502
+Richmond, VA 804 23223
+Riverside, CA 951 92503
+Riverton, WY 307 82501
+Roanoke, VA 540 24018
+Rochester, MN 507 55901
+Rochester, NH 603 03867
+Rochester, NY 585 14609
+Rockford, IL 815 61107
+Rock Springs, WY 307 82901
+Roswell, GA 770 30075
+Rutland, VT 802 05701
+Sacramento, CA 916 95823
+Saginaw, MI 989 48601
+Saint Cloud, MN 320 56301
+Saint George, UT 435 84770
+Saint Paul Park, MN 651 55071
+Saint Petersburg, FL 727 33710
+Salem, NH 603 03079
+Salinas, CA 831 93905
+Salt Lake City, UT 801 84118
+San Antonio, TX 210 78228
+San Bernardino, CA 909 92404
+San Diego, CA 619 92154
+San Francisco, CA 415 94112
+San Jose, CA 408 95123
+San Mateo, CA 650 94403
+Santa Rosa, CA 707 95403
+Savannah, GA 912 31419
+Scranton, PA 570 18504
+Seaford, DE 302 19973
+Seattle, WA 206 98115
+Sedalia, MO 660 65301
+Sheridan, WY 307 82801
+Shreveport, LA 318 71106
+Sioux City, IA 712 51106
+Sioux Falls, SD 605 57106
+Smyrna, DE 302 19977
+Southaven, MS 662 38671
+South Bend, IN 574 46614
+South Burlington, VT 802 05403
+Southbury, CT 705 06488
+Spearfish, SD 605 57783
+Spokane, WA 509 99208
+Springfield, IL 217 62704
+Springfield, MA 413 01109
+Springfield, MO 417 65807
+Stockton, CA 209 95206
+Syracuse, NY 315 13210
+Tacoma, WA 253 98444
+Tallahassee, FL 850 32303
+Tampa, FL 813 33647
+Toledo, OH 419 43615
+Toms River, NJ 732 08753
+Topeka, KS 785 66614
+Trenton, NJ 609 08618
+Troy, MI 248 48085
+Tucson, AZ 520 85705
+Tulsa, OK 918 74133
+Twin Falls, ID 208 83301
+Tyler, TX 903 75703
+Vancouver, WA 360 98682
+Virginia Beach, VA 757 23464
+Wailea,Hi,808,96753
+Warren, MI 586 48089
+Washington, DC 202 20011
+Wasilla, AK 907 99654
+Watertown, SD 605 57201
+Weirton, WV 304 26062
+West Fargo, ND 701 58078
+West Palm Beach, FL 561 33411
+Wheeling, WV 304 26003
+Wichita, KS 316 67212
+Williston, ND 701 58801
+Wilmington, DE 302 19805
+Worcester, MA 508 01604
+Yankton, SD 605 57078
+Yonkers, NY 914 10701
+Yuma, AZ 928 85364
