@@ -88,7 +88,7 @@ struct place {
 
 ostream& operator<< (ostream& out, const place& a)
 {
-  out << a.city << ", " << a.state << "  "
+  out << a.city << ", " << a.state << " "
       << setfill('0') << setw(5) << a.ZIP << endl
       << "(" << setfill('0') << setw(3) << a.areacode
       << ") xxx-xxxx";
