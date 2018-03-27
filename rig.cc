@@ -182,32 +182,32 @@ void option_data::parse_options(int argc, const char* const argv[],
     do {
       int j;
       for (j = 0; j < numopts; j ++) {
-        if (*cp == config[j].option) {
-          const char* operand = NULL;
-          if (config[j].operand != NEVER) {
-            if (*(cp+1) != '\0') {
-              operand = cp+1;
-              cp = NULL;
-            } else if (i + 1 < argc && argv[i+1][0] != '-') {
-              i ++;
-              operand = argv[i];
-              cp = NULL;
-            }
-          }
-          switch (config[j].operand) {
-          case ALWAYS:
-            if (operand == NULL)
-              printusage();
-            else
-              (*(config[j].handler))(config[j].option, operand);
-            break;
-          case NEVER:
-          case OPTIONAL:
-            (*(config[j].handler))(config[j].option, operand);
-            break;
-          }
-          break;
-        }
+	if (*cp == config[j].option) {
+	  const char* operand = NULL;
+	  if (config[j].operand != NEVER) {
+	    if (*(cp+1) != '\0') {
+	      operand = cp+1;
+	      cp = NULL;
+	    } else if (i + 1 < argc && argv[i+1][0] != '-') {
+	      i ++;
+	      operand = argv[i];
+	      cp = NULL;
+	    }
+	  }
+	  switch (config[j].operand) {
+	  case ALWAYS:
+	    if (operand == NULL)
+	      printusage();
+	    else
+	      (*(config[j].handler))(config[j].option, operand);
+	    break;
+	  case NEVER:
+	  case OPTIONAL:
+	    (*(config[j].handler))(config[j].option, operand);
+	    break;
+	  }
+	  break;
+	}
       }
       if (j == numopts)
         printusage();
