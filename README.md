@@ -10,11 +10,13 @@ story, or convincingly fool telemarketers with fake data.
 The data has been expanded and updated since the original release.
 
 
+## Forked to github
+
 EinBaum: The original RIG program was downloaded here:
 
 http://rig.sourceforge.net/
 
-Original README:
+## Original README:
 
 This is RIG, a program that generates fake identities. Install should be
 fairly straightforward, just type "make install". If your system dosen't 
