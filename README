@@ -1,7 +1,18 @@
+# rig.py
+
+RIG Random Identity Generator ported to Python
+
+Michael McMahon
+
+Rig.py can be used to fill databases with dummy data, build characters for a
+story, or convincingly fool telemarketers with fake data.
+
+The data has been expanded and updated since the original release.
+
+
 EinBaum: The original RIG program was downloaded here:
 
 http://rig.sourceforge.net/
-
 
 Original README:
 
