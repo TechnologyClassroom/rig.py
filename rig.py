@@ -17,8 +17,9 @@ parser.add_argument('-F', '--fake', action="store_true",
 parser.add_argument('-c', '--count', action='store', dest='count', default=1,
                     type=int, help='Generate N number of identities.')
 parser.add_argument('-d', '--datadir', action='store', dest='ddir',
-                    default="data", type=str,
+                    default="data/", type=str,
                     help='Generate N number of identities.')
+# For Windows users, change 'data/' to 'data\' to make rig.py work.
 args = parser.parse_args()
 
 
@@ -49,17 +50,17 @@ for i in range(1, args.count + 1):
         gender = randrange(0, 2)
     if gender == 0:
         # Male
-        firstname = random_line(open(args.ddir + "/mnames.idx", "r"))
+        firstname = random_line(open(args.ddir + "mnames.idx", "r"))
     else:
         # Female
-        firstname = random_line(open(args.ddir + "/fnames.idx", "r"))
-    lastname = random_line(open(args.ddir + "/lnames.idx", "r"))
+        firstname = random_line(open(args.ddir + "fnames.idx", "r"))
+    lastname = random_line(open(args.ddir + "lnames.idx", "r"))
 
     # Choose an address
     streetnumber = str(randrange(0,1000))
-    streetname = random_line(open(args.ddir + "/street.idx", "r"))
+    streetname = random_line(open(args.ddir + "street.idx", "r"))
     # Location
-    location = random_line(open(args.ddir + "/locdata.idx", "r"))
+    location = random_line(open(args.ddir + "locdata.idx", "r"))
     locationci = location[:-13]
     locationst = location[-12:-10]
     locationzip = location[-5:]

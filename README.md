@@ -13,7 +13,7 @@ The data has been heavily expanded and updated since the original release.
 
 Run the program will all defaults similar to ```rig```.
 
-```python3 rig```
+```python3 rig.py```
 
 List all switches.
 
@@ -50,9 +50,10 @@ Generate 10 identities.
 
 ```python3 rig.py -c 10```
 
-Use a different folder data folder.
+Use a different folder data folder.  Note: This does require the last forward
+slash (/) to work.
 
-```python3 rig.py -d /usr/local/share/rig```
+```python3 rig.py -d /usr/local/share/rig/```
 
 Any number of switches can be combined except for ```-h```.  If ```-m``` and
 ```-f``` are combined, the default random gender will be used.
