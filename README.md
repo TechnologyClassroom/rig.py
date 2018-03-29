@@ -17,23 +17,38 @@ Run the program will all defaults similar to ```rig```.
 
 List all switches.
 
-```python3 rig.py -h```
+```
+$ python3 rig.py -h
+usage: rig.py [-h] [-f] [-m] [-F] [-c COUNT] [-d DDIR]
 
-Generate a male identity.
+rig.py is a Random Identity Generator ported from rig.
 
-```python3 rig.py -m```
+optional arguments:
+  -h, --help            show this help message and exit
+  -f, --female          Choose only female names.
+  -m, --male            Choose only male names.
+  -F, --fake            Choose only fake phone numbers 555-0100 - 555-0199.
+  -c COUNT, --count COUNT
+                        Generate N number of identities.
+  -d DDIR, --datadir DDIR
+                        Generate N number of identities.
+```
 
 Generate a female identity.
 
 ```python3 rig.py -f```
 
-Generate 10 identities.
+Generate a male identity.
 
-```python3 rig.py -c 10```
+```python3 rig.py -m```
 
 Generate identity with fictional phone number.
 
 ```python3 rig.py -F```
+
+Generate 10 identities.
+
+```python3 rig.py -c 10```
 
 Use a different folder data folder.
 
@@ -41,7 +56,6 @@ Use a different folder data folder.
 
 Any number of switches can be combined except for ```-h```.  If ```-m``` and
 ```-f``` are combined, the default random gender will be used.
-
 
 ## Forked to github
 
