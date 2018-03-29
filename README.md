@@ -7,7 +7,40 @@ Michael McMahon
 Rig.py can be used to fill databases with dummy data, build characters for a
 story, or convincingly fool telemarketers with fake data.
 
-The data has been expanded and updated since the original release.
+The data has been heavily expanded and updated since the original release.
+
+## Switches and examples
+
+Run the program will all defaults similar to ```rig```.
+
+```python3 rig```
+
+List all switches.
+
+```python3 rig.py -h```
+
+Generate a male identity.
+
+```python3 rig.py -m```
+
+Generate a female identity.
+
+```python3 rig.py -f```
+
+Generate 10 identities.
+
+```python3 rig.py -c 10```
+
+Generate identity with fictional phone number.
+
+```python3 rig.py -F```
+
+Use a different folder data folder.
+
+```python3 rig.py -d /usr/local/share/rig```
+
+Any number of switches can be combined except for ```-h```.  If ```-m``` and
+```-f``` are combined, the default random gender will be used.
 
 
 ## Forked to github

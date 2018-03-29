@@ -2,7 +2,24 @@
 """rig.py is a Random Identity Generator ported from rig."""
 
 from random import randrange
-# import argparse  # TODO Add switches from rig
+from argparse import ArgumentParser  # Add switch arguments for python 2.7&3.2+
+
+# argparse
+# This section adds switch -h and argument to the script.
+parser = ArgumentParser(
+    description='rig.py is a Random Identity Generator ported from rig.')
+parser.add_argument('-f', '--female', 
+                    help='Choose only female names.', action="store_true")
+parser.add_argument('-m', '--male', 
+                    help='Choose only male names.', action="store_true")
+parser.add_argument('-F', '--fake', action="store_true",
+                    help='Choose only fake phone numbers 555-0100 - 555-0199.')
+parser.add_argument('-c', '--count', action='store', dest='count', default=1,
+                    type=int, help='Generate N number of identities.')
+parser.add_argument('-d', '--datadir', action='store', dest='ddir',
+                    default="data", type=str,
+                    help='Generate N number of identities.')
+args = parser.parse_args()
 
 
 def random_line(afile):
@@ -15,42 +32,48 @@ def random_line(afile):
     return line[:-1]
 
 
-# Choose a name
-# Randomly decide between Male or Female
-gender = randrange(0, 2)
-if gender == 0:
-	# Male
-	firstname = random_line(open("data/mnames.idx", "r"))
-else:
-	# Female
-	firstname = random_line(open("data/fnames.idx", "r"))
-lastname = random_line(open("data/lnames.idx", "r"))
+for i in range(1, args.count + 1):
+    """Choose a random identity."""
+    if 1 < i < args.count + 1:
+        """Print a space between each identity."""
+        print()
 
-# print(firstname)  # Debug
-# print(lastname)  # Debug
+    # Choose a name
+    # Randomly decide between Male or Female
+    gender = randrange(0, 2)
+    if args.male:
+        gender = 0
+    if args.female:
+        gender = 1
+    if args.male and args.female:
+        gender = randrange(0, 2)
+    if gender == 0:
+        # Male
+        firstname = random_line(open(args.ddir + "/mnames.idx", "r"))
+    else:
+        # Female
+        firstname = random_line(open(args.ddir + "/fnames.idx", "r"))
+    lastname = random_line(open(args.ddir + "/lnames.idx", "r"))
 
-# Choose an address
-streetnumber = str(randrange(0,1000))
-streetname = random_line(open("data/street.idx", "r"))
-# Location
-location = random_line(open("data/locdata.idx", "r"))
-locationci = location[:-13]
-locationst = location[-12:-10]
-locationzip = location[-5:]
+    # Choose an address
+    streetnumber = str(randrange(0,1000))
+    streetname = random_line(open(args.ddir + "/street.idx", "r"))
+    # Location
+    location = random_line(open(args.ddir + "/locdata.idx", "r"))
+    locationci = location[:-13]
+    locationst = location[-12:-10]
+    locationzip = location[-5:]
 
-# print(streetnumber)  # Debug
-# print(streetname)  # Debug
-# print(location)  # Debug
-# print(locationci)  # Debug
-# print(locationst)  # Debug
-# print(locationzip)  # Debug
+    # Create a phone number
+    phonea = location[-9:-6]
+    phoneb = str(randrange(0,1000)).zfill(3)
+    phonec = str(randrange(0,10000)).zfill(4)
+    if args.fake:
+        """Only generate numbers between 555-0100 - 555-0199"""
+        phoneb = str(555)
+        phonec = str(randrange(100,200)).zfill(4)
 
-# Create a phone number
-phonea = location[-9:-6]
-phoneb = str(randrange(100,1000))  # TODO Improve this to allow 001
-phonec = str(randrange(1000,10000))  # TODO Change this to allow 0001
-
-print(firstname[:-1] + " " + lastname[:-1])
-print(streetnumber + " " + streetname[:-1])
-print(locationci + ", " + locationst + " " + locationzip)
-print("(" + phonea + ") " + phoneb + "-" + phonec)
+    print(firstname + " " + lastname)
+    print(streetnumber + " " + streetname)
+    print(locationci + ", " + locationst + " " + locationzip)
+    print("(" + phonea + ") " + phoneb + "-" + phonec)
