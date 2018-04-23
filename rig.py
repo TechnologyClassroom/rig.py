@@ -32,9 +32,9 @@ parser.add_argument('-f', '--female',
                     help='Choose only female names.', action="store_true")
 parser.add_argument('-m', '--male', 
                     help='Choose only male names.', action="store_true")
-parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
-                    default="data/", type=str,
-                    help='Generate N number of identities.')
+#parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
+#                    default="data/", type=str,
+#                    help='Generate N number of identities.')
 # For Windows users, change 'data/' to 'data\' to make rig.py work.
 args = parser.parse_args()
 
