@@ -1,6 +1,18 @@
 #!/usr/bin/env python
 """rig.py is a Random Identity Generator ported from rig."""
 
+# rig.py
+
+# Michael McMahon
+
+# Depends on argparse and should work on Python 3.2 and onward.
+
+# Run with this command:
+#   python3 rig.py
+#
+# View help and list all options:
+#   python3 rig.py -h
+
 from random import randrange
 from argparse import ArgumentParser  # Add switch arguments for python 2.7&3.2+
 
@@ -8,15 +20,19 @@ from argparse import ArgumentParser  # Add switch arguments for python 2.7&3.2+
 # This section adds switch -h and argument to the script.
 parser = ArgumentParser(
     description='rig.py is a Random Identity Generator ported from rig.')
-parser.add_argument('-f', '--female', 
-                    help='Choose only female names.', action="store_true")
-parser.add_argument('-m', '--male', 
-                    help='Choose only male names.', action="store_true")
 parser.add_argument('-F', '--fake', action="store_true",
                     help='Choose only fake phone numbers 555-0100 - 555-0199.')
 parser.add_argument('-c', '--count', action='store', dest='count', default=1,
                     type=int, help='Generate N number of identities.')
 parser.add_argument('-d', '--datadir', action='store', dest='ddir',
+                    default="data/", type=str,
+                    help='Generate N number of identities.')
+# For Windows users, change 'data/' to 'data\' to make rig.py work.
+parser.add_argument('-f', '--female', 
+                    help='Choose only female names.', action="store_true")
+parser.add_argument('-m', '--male', 
+                    help='Choose only male names.', action="store_true")
+parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
                     default="data/", type=str,
                     help='Generate N number of identities.')
 # For Windows users, change 'data/' to 'data\' to make rig.py work.
