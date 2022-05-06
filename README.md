@@ -17,37 +17,33 @@ List all switches.
 
 ```
 $ python3 rtog.py -h
-usage: rig.py [-h] [-f] [-m] [-F] [-c COUNT] [-d DDIR]
+usage: rtog.py [-h] [-f] [-m] [-F] [-c COUNT] [-d DDIR]
 
-rig.py is a Random Identity Generator ported from rig.
+rtog.py is a Random technology organization Generator ported from rig.
 
 optional arguments:
   -h, --help            show this help message and exit
   -F, --fake            Choose only fake phone numbers 555-0100 - 555-0199.
   -c COUNT, --count COUNT
-                        Generate N number of identities.
+                        Generate N number of technology organization.
 ```
 
-Generate a female identity.
+Generate a random technology organization.
 
-```python3 rig.py -f```
+```python3 rtog.py -f```
 
-Generate a male identity.
+Generate technology organization with fictional phone number.
 
-```python3 rig.py -m```
+```python3 rtog.py -F```
 
-Generate identity with fictional phone number.
+Generate 10 technology organizations.
 
-```python3 rig.py -F```
-
-Generate 10 identities.
-
-```python3 rig.py -c 10```
+```python3 rtog.py -c 10```
 
 Use a different folder data folder.  Note: This does require the last forward
 slash (/) to work.
 
-```python3 rig.py -d /usr/local/share/rig/```
+```python3 rtog.py -d /usr/local/share/rtog/```
 
 Any number of switches can be combined except for ```-h```.  If ```-m``` and
 ```-f``` are combined, the default random gender will be used.
