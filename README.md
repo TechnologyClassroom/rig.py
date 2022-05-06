@@ -9,6 +9,8 @@ story, or convincingly fool telemarketers with fake data.
 
 The data has been heavily expanded and updated since the original release.
 
+See also [Random Technology Organization Generator (RTOG)](https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen).
+
 ## Switches and examples
 
 Run the program will all defaults similar to ```rig```.
