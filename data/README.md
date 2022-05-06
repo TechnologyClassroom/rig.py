@@ -1,5 +1,4 @@
-fnames.idx - Female names
-lnames.idx - Last names
+fnames.idx - Beginnings of technology organizations
+lnames.idx - Endings of organizations
 locdata.idx - City, State, Zip
-mnames.idx - Male names
 street.idx - Street names

@@ -1,36 +1,30 @@
-# rig.py
+# rtog.py
 
-RIG Random Identity Generator ported to Python
+RTOG Random Technology Organization Generator hacked from rig.py.
 
 Michael McMahon
 
-Rig.py can be used to fill databases with dummy data, build characters for a
+Rtog.py can be used to fill databases with dummy data, build fictional organizations for a
 story, or convincingly fool telemarketers with fake data.
-
-The data has been heavily expanded and updated since the original release.
 
 ## Switches and examples
 
 Run the program will all defaults similar to ```rig```.
 
-```python3 rig.py```
+```python3 rtog.py```
 
 List all switches.
 
 ```
-$ python3 rig.py -h
+$ python3 rtog.py -h
 usage: rig.py [-h] [-f] [-m] [-F] [-c COUNT] [-d DDIR]
 
 rig.py is a Random Identity Generator ported from rig.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -f, --female          Choose only female names.
-  -m, --male            Choose only male names.
   -F, --fake            Choose only fake phone numbers 555-0100 - 555-0199.
   -c COUNT, --count COUNT
-                        Generate N number of identities.
-  -d DDIR, --datadir DDIR
                         Generate N number of identities.
 ```
 
