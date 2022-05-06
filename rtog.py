@@ -26,12 +26,8 @@ parser.add_argument('-c', '--count', action='store', dest='count', default=1,
                     type=int, help='Generate N number of identities.')
 parser.add_argument('-d', '--datadir', action='store', dest='ddir',
                     default="data/", type=str,
-                    help='Generate N number of identities.')
-# For Windows users, change 'data/' to 'data\' to make rig.py work.
-parser.add_argument('-f', '--female',
-                    help='Choose only female names.', action="store_true")
-parser.add_argument('-m', '--male',
-                    help='Choose only male names.', action="store_true")
+                    help='Generate N number of technology organizations.')
+# For Windows users, change 'data/' to 'data\' to make rtog.py work.
 #parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
 #                    default="data/", type=str,
 #                    help='Generate N number of identities.')
@@ -56,17 +52,7 @@ for i in range(1, args.count + 1):
         print()
 
     # Choose a name
-    # Randomly decide between Male or Female
-    gender = randrange(0, 2)
-    if args.male:
-        gender = 0
-    if args.female:
-        gender = 1
-    if args.male and args.female:
-        gender = 1
-    else:
-        # Female
-        firstname = random_line(open(args.ddir + "fnames.idx", "r"))
+    firstname = random_line(open(args.ddir + "fnames.idx", "r"))
     lastname = random_line(open(args.ddir + "lnames.idx", "r"))
 
     # Choose an address
