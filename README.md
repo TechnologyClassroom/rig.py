@@ -1,17 +1,18 @@
 # rtog.py
 
-RTOG Random Technology Organization Generator hacked from rig.py.
+Random Technology Organization Generator (RTOG) hacked from rig.py generates real and
+ficticious technology organizations. Sometimes the results are humorous.
 
 Michael McMahon
 
-Rtog.py can be used to fill databases with dummy data, build fictional organizations for a
+`rtog.py` can be used to fill databases with dummy data, build fictional organizations for a
 story, or convincingly fool telemarketers with fake data.
 
 ## Switches and examples
 
-Run the program will all defaults similar to ```rig```.
+Run the program will all defaults similar to `rig`.
 
-```python3 rtog.py```
+    python3 rtog.py
 
 List all switches.
 
@@ -30,23 +31,27 @@ optional arguments:
 
 Generate a random technology organization.
 
-```python3 rtog.py -f```
+    python3 rtog.py -f
 
 Generate technology organization with fictional phone number.
 
-```python3 rtog.py -F```
+    python3 rtog.py -F
 
 Generate 10 technology organizations.
 
-```python3 rtog.py -c 10```
+    python3 rtog.py -c 10
 
 Use a different folder data folder.  Note: This does require the last forward
 slash (/) to work.
 
-```python3 rtog.py -d /usr/local/share/rtog/```
+    python3 rtog.py -d /usr/local/share/rtog/
 
-Any number of switches can be combined except for ```-h```.  If ```-m``` and
-```-f``` are combined, the default random gender will be used.
+Any number of switches can be combined except for `-h`.  If `-m` and
+`-f` are combined, the default random gender will be used.
+
+Continuously generate only names using bash.
+
+    while [ 1 ]; do python3 rtog.py | head -n 1 && sleep 1; done
 
 ## Forked to github
 
