@@ -34,8 +34,6 @@ optional arguments:
   -F, --fake            Choose only fake phone numbers 555-0100 - 555-0199.
   -c COUNT, --count COUNT
                         Generate N number of identities.
-  -d DDIR, --datadir DDIR
-                        Generate N number of identities.
 ```
 
 Generate a female identity.
