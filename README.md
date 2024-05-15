@@ -4,12 +4,14 @@ RIG Random Identity Generator ported to Python
 
 Michael McMahon
 
-Rig.py can be used to fill databases with dummy data, build characters for a
-story, or convincingly fool telemarketers with fake data.
+Rig.py can be used to fill development databases with dummy data, build characters for a
+story, or convincingly fool telemarketers with misinformation.
 
 The data has been heavily expanded and updated since the original release.
 
-See also [Random Technology Organization Generator (RTOG)](https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen).
+See also [Random Technology Organization Generator (RTOG)](https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen) branch.
+
+If you are looking for something a bit more specialized than rig.py, look into [Faker](https://github.com/joke2k/faker) or [Ruby Faker](https://github.com/faker-ruby/faker) which are actively developed as of the last time I checked and integrate with databases.
 
 ## Switches and examples
 
@@ -78,4 +80,4 @@ http://www.census.gov/genealogy/names/, but Trent Stanley maintains a
 more extensive list at http://members.cox.net/gps/rignames_all.zip
 
 If you have any patches, fixes, etc., just send 'em on over to
-vectro@RIG.sourceforge.net.
+REDACTED.
