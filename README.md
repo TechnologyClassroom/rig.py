@@ -10,6 +10,18 @@ Michael McMahon
 can be used to fill databases with dummy data, build fictional organizations
 for a story, or convincingly fool telemarketers with fake data.
 
+## Getting started
+
+These four commands will generate 10 potentially new technology organizations
+along with bogus phone numbers and plausible mailing addresses. YOLO!
+
+```
+git clone https://github.com/TechnologyClassroom/rig.py
+cd rig.py
+git checkout technology-organization-gen
+python3 rtog.py -c 10
+```
+
 ## Switches and examples
 
 Run the program will all defaults similar to `rig`.
