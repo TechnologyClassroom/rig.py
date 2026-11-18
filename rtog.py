@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """rtog.py is a Random Technology Organization Generator hacked from rig.py."""
+# https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen
 
 # rtog.py
 

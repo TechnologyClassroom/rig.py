@@ -1,12 +1,14 @@
 # rtog.py
 
-Random Technology Organization Generator (RTOG) hacked from rig.py generates real and
+Random Technology Organization Generator (RTOG) hacked from
+[rig.py](https://github.com/TechnologyClassroom/rig.py) generates real and
 ficticious technology organizations. Sometimes the results are humorous.
 
 Michael McMahon
 
-`rtog.py` can be used to fill databases with dummy data, build fictional organizations for a
-story, or convincingly fool telemarketers with fake data.
+[rtog.py](https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen)
+can be used to fill databases with dummy data, build fictional organizations
+for a story, or convincingly fool telemarketers with fake data.
 
 ## Switches and examples
 
