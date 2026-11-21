@@ -1,67 +1,99 @@
-# rig.py
+# rig.py and rtog.py
 
-RIG Random Identity Generator ported to Python
+`rig.py` is the Random Identity Generator (RIG) ported to Python.
+[rig.py](https://github.com/TechnologyClassroom/rig.py) can be used to fill
+development databases with dummy data, build characters for a story, come up
+with a name a child, or convincingly fool telemarketers with misinformation.
+
+`rtog.py` is the Random Technology Organization Generator (RTOG) which
+generates real and ficticious technology organizations. Often times the results
+are satiracal. rtog.py can be used to generate organization names in a test
+database, come up with a new technology non-profit, build organizations for a
+fiction story, or start a new religious following.
 
 Michael McMahon
 
-When using the classic program [rig](https://rig.sourceforge.net/). I bet you
-were thinking to yourself, "This is too fast. I wish it was slower." Well, you
-are in luck because now it is ported to Python.
-
-[Rig.py](https://github.com/TechnologyClassroom/rig.py) can be used to fill
-development databases with dummy data, build characters for a story, or
-convincingly fool telemarketers with misinformation.
-
-The data has been heavily expanded and updated since the original rig release
-in 2024.
-
-rip.py depends on argparse and should work with Python 3.2+.
-
-See also
-[Random Technology Organization Generator (RTOG)](https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen)
-branch for a fun variation that generates names for technology organizations.
+These programs are based on the concept of the classic program
+[rig](https://rig.sourceforge.net/). In 2024, the data has been heavily
+expanded and updated since the original rig release.
 
 If you are looking for something a bit more specialized than rig.py, look into
 [Faker](https://github.com/joke2k/faker) or
 [Ruby Faker](https://github.com/faker-ruby/faker) which are actively developed
-as of the last time I checked and integrate with databases.
+as of the last time I checked and integrate with databases. If you want to
+update the name database in the future, the
+[United States Census Bureau](https://www.census.gov/) website is a good place
+to get started.
+
+## Getting started
+
+These four commands will generate 5 names and addresses as well as 5
+potentially new technology organizations along with bogus phone numbers and
+plausible mailing addresses. YOLO!
+
+```
+git clone https://github.com/TechnologyClassroom/rig.py
+cd rig.py
+python3 rig.py -c 5
+python3 rtog.py -c 5
+```
+
+## Dependencies
+
+rip.py and rtog.py depend on argparse and should work with Python 3.2+.
 
 ## Switches and examples
 
-Run the program will all defaults similar to `rig`.
+Clone this repository with git.
+
+    git clone https://github.com/TechnologyClassroom/rig.py
+
+Change to this directory.
+
+    cd rig.py
+
+Run rig.py will all defaults similar to the classic `rig` program.
 
     python3 rig.py
 
 List all switches.
 
+    python3 rig.py -h
+
+Prints this output:
+
 ```
-$ python3 rig.py -h
-usage: rig.py [-h] [-f] [-m] [-F] [-c COUNT] [-d DDIR]
+usage: rig.py [-h] [-F] [-c COUNT] [-d DDIR] [-f] [-m]
 
 rig.py is a Random Identity Generator ported from rig.
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
-  -f, --female          Choose only female names.
-  -m, --male            Choose only male names.
   -F, --fake            Choose only fake phone numbers 555-0100 - 555-0199.
   -c COUNT, --count COUNT
                         Generate N number of identities.
+  -d DDIR, --datadir DDIR
+                        Generate N number of identities.
+  -f, --fem             Choose only feminine names.
+  -m, --masc            Choose only masculine names.
 ```
 
-Generate a female identity.
+Generate a feminine identity.
 
     python3 rig.py -f
 
-Generate a male identity.
+Generate a masculine identity.
 
     python3 rig.py -m
 
-Generate identity with fictional phone number.
+Note that rtog.py does not have the concept of gendered organizations.
+
+Generate identity with a fictional phone number.
 
     python3 rig.py -F
 
-Generate 10 identities.
+Generate more than one identity. Replace 10 with the number of identities you
+would like to create.
 
     python3 rig.py -c 10
 
@@ -70,24 +102,39 @@ slash (/) to work.
 
     python3 rig.py -d /usr/local/share/rig/
 
-Any number of switches can be combined except for `-h`.  If `-m` and `-f` are
-combined, the default random gender will be used.
+Any number of switches can be combined except for `-h`. If `-m` and `-f` are
+combined, either source file may be picked at random.
 
-## Forked to github
+Generate a random technology organization.
 
-EinBaum: The original RIG program was downloaded here:
+    python3 rtog.py
 
-<http://rig.sourceforge.net/>
+Generate technology organization with fictional phone number.
 
-## Original README:
+    python3 rtog.py -F
 
-This is RIG, a program that generates fake identities. Install should be fairly
-straightforward, just type "make install". If your system [does] not have
-/dev/urandom and you'd like to use /dev/random instead, do
-$ make install CFLAGS=-DDEVRANDOM
+Generate 10 technology organizations.
 
-RIG [orignally] [came] with the top 1000 names from the US census at
-http://www.census.gov/genealogy/names/, but Trent Stanley maintains a more
-extensive list at http://members.cox.net/gps/rignames_all.zip
+    python3 rtog.py -c 10
 
-If you have any patches, fixes, etc., just send them on over to REDACTED.
+Use a different folder data folder. Note: This does require the last forward
+slash (/) to work.
+
+    python3 rtog.py -d /usr/local/share/rtog/
+
+Any number of switches can be combined except for `-h`. If `-m` and
+`-f` are combined, the default random gender will be used.
+
+Continuously run rig in a loop with only names using bash.
+
+    bash run-rig-loop.sh
+
+Continuously run rtog in a loop with only names using bash.
+
+    bash run-rtog-loop.sh
+
+## License
+
+GPL-3.0-or-later
+
+This program is intended for fun.

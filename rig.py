@@ -1,9 +1,23 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """rig.py is a Random Identity Generator ported from rig."""
 
 # rig.py
+# Version v1.0.0
 
-# Michael McMahon
+# Copyright 2018-2026 Michael McMahon
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Depends on argparse and should work on Python 3.2 and onward.
 
@@ -14,7 +28,7 @@
 #   python3 rig.py -h
 
 from random import randrange
-from argparse import ArgumentParser  # Add switch arguments for python 2.7&3.2+
+from argparse import ArgumentParser  # Add switch arguments for python 3.2+
 
 # argparse
 # This section adds switch -h and argument to the script.
@@ -25,13 +39,13 @@ parser.add_argument('-F', '--fake', action="store_true",
 parser.add_argument('-c', '--count', action='store', dest='count', default=1,
                     type=int, help='Generate N number of identities.')
 parser.add_argument('-d', '--datadir', action='store', dest='ddir',
-                    default="data/", type=str,
+                    default="data-rig/", type=str,
                     help='Generate N number of identities.')
 # For Windows users, change 'data/' to 'data\' to make rig.py work.
-parser.add_argument('-f', '--female', 
-                    help='Choose only female names.', action="store_true")
-parser.add_argument('-m', '--male', 
-                    help='Choose only male names.', action="store_true")
+parser.add_argument('-f', '--fem',
+                    help='Choose only feminine names.', action="store_true")
+parser.add_argument('-m', '--masc',
+                    help='Choose only masculine names.', action="store_true")
 #parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
 #                    default="data/", type=str,
 #                    help='Generate N number of identities.')
@@ -56,19 +70,19 @@ for i in range(1, args.count + 1):
         print()
 
     # Choose a name
-    # Randomly decide between Male or Female
+    # Randomly decide between masculine or feminine.
     gender = randrange(0, 2)
-    if args.male:
+    if args.masc:
         gender = 0
-    if args.female:
+    if args.fem:
         gender = 1
-    if args.male and args.female:
+    if args.masc and args.fem:
         gender = randrange(0, 2)
     if gender == 0:
-        # Male
+        # Masculine
         firstname = random_line(open(args.ddir + "mnames.idx", "r"))
     else:
-        # Female
+        # Feminine
         firstname = random_line(open(args.ddir + "fnames.idx", "r"))
     lastname = random_line(open(args.ddir + "lnames.idx", "r"))
 
