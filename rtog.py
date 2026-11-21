@@ -1,10 +1,24 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """rtog.py is a Random Technology Organization Generator hacked from rig.py."""
-# https://github.com/TechnologyClassroom/rig.py/tree/technology-organization-gen
+# https://github.com/TechnologyClassroom/rig.py
 
 # rtog.py
+# Version v1.0.0
 
-# Michael McMahon
+# Copyright 2022-2026 Michael McMahon
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Depends on argparse and should work on Python 3.2 and onward.
 
@@ -26,7 +40,7 @@ parser.add_argument('-F', '--fake', action="store_true",
 parser.add_argument('-c', '--count', action='store', dest='count', default=1,
                     type=int, help='Generate N number of identities.')
 parser.add_argument('-d', '--datadir', action='store', dest='ddir',
-                    default="data/", type=str,
+                    default="data-rtog/", type=str,
                     help='Generate N number of technology organizations.')
 # For Windows users, change 'data/' to 'data\' to make rtog.py work.
 #parser.add_argument('-s', '--sqlitedb', action='store', dest='sqldb',
